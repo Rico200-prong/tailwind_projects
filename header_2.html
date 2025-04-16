@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Header2</title>
+  </head>
+  <body class="bg-[#2f1893] text-white my-16 mx-32">
+    <header>
+      <nav class="flex items-center justify-between">
+        <section>
+          <span class="text-[24px] font-bold"> Startup 3</span>
+        </section>
+        <section>
+          <ul class="list-none flex items-center text-[18px]">
+            <li>
+              <a href="#" class="text-white decoration-none">Subscribe</a>
+            </li>
+            <li>
+              <a href="#" class="text-white decoration-none mx-[30px]"
+                >Featurs</a
+              >
+            </li>
+            <button
+              class="text-white bg-[#482be7] rounded-full py-3 px-6 text-[18px]"
+            >
+              Sign Up
+            </button>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section class="flex flex-col justify-center items-center mt-[4rem]">
+        <h1 class="text-[72px] w-[40%] font-black text-center">
+          Let’s make design fast and easy
+        </h1>
+        <p class="text-[22px] w-[35%] text-center">
+          The most important part of the Startup is the samples. The samples
+          form a set of 25 usable pages you can use as is or you can add new
+          blocks from UI Kit.
+        </p>
+      </section>
+      <section class="flex items-center mt-[80px] justify-center">
+        <form>
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="bg-transparent text-white border-[#ffffff41] border-solid border-2 rounded-full px-[20px] py-[10px] text-[20px]"
+          />
+        </form>
+        <button
+          class="rounded-full border-none px-[20px] py-[10px] text-white bg-[#25dac5] text-[20px] ml-[10px]"
+        >
+          send
+        </button>
+      </section>
+      <section>
+        <small class="flex justify-center mt-[40px] text-[16px]"
+          >By signing up, you agree to the Terms of Service</small
+        >
+      </section>
+    </main>
+  </body>
+</html>

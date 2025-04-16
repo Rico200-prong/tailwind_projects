@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font link -->
+    <!-- boxicons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- boxicons link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Header1</title>
+  </head>
+  <body class="my-16 mx-32">
+    <header>
+      <nav class="flex items-center justify-between">
+        <span class="text-[#1E0E62] text-[24px] font-bold">Startup 3</span>
+        <ul class="flex items-center gap-[30px] text-[18px] text-[#15143966]">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Featiures</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+          <i class="bx bx-search"></i>
+        </ul>
+        <section class="text-[18px]">
+          <button class="text-[#15143966] mr-[30px]">Sign In</button>
+          <button
+            class="bg-[#25DAC5] text-white px-[20px] py-[10px] rounded-full"
+          >
+            Sign Up
+          </button>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section class="flex flex-col items-center justify-center mt-[6rem]">
+        <h1 class="text-[#1E0E62] font-bold text-[72px]">Startup Framework</h1>
+        <p class="text-[22px] text-[#15143966] w-[34%] text-center mt-[2rem]">
+          We made it so beautiful and simple. It combines landings, pages, blogs
+          and shop screens. It is definitely the tool you need in your
+          collection!
+        </p>
+      </section>
+      <section class="flex flex-col items-center justify-center mt-[4rem]">
+        <button
+          class="text-[20px] text-[#fff] bg-[#25DAC5] py-[15px] px-[40px] rounded-full"
+        >
+          Purchase Now For $248
+        </button>
+        <ul class="text-[18px] text-[#25DAC5] mt-[20px]">
+          <li><a href="#">Learn more</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
