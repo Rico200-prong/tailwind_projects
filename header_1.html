@@ -25,24 +25,32 @@
             fontFamily: {
               sans: ["DM Sans", "sans-serif"],
             },
+            screens: {
+              md: { max: "700px" },
+              lg: { min: "701px", max: "1024px" },
+              xl: { min: "1025px", max: "1536px" },
+              xxl: { min: "1537px" },
+            },
           },
         },
       };
     </script>
     <title>Header1</title>
   </head>
-  <body class="my-16 mx-32">
+  <body class="my-16 mx-32 md:my-[20px] md:mx-[35px] lg:my-[20px] lg:mx-[35px]">
     <header>
       <nav class="flex items-center justify-between">
         <span class="text-[#1E0E62] text-[24px] font-bold">Startup 3</span>
-        <ul class="flex items-center gap-[30px] text-[18px] text-[#15143966]">
+        <ul
+          class="flex items-center gap-[30px] text-[18px] text-[#15143966] md:hidden lg:hidden"
+        >
           <li><a href="#">Home</a></li>
           <li><a href="#">Featiures</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Shop</a></li>
           <i class="bx bx-search"></i>
         </ul>
-        <section class="text-[18px]">
+        <section class="text-[18px] md:hidden lg:hidden">
           <button class="text-[#15143966] mr-[30px]">Sign In</button>
           <button
             class="bg-[#25DAC5] text-white px-[20px] py-[10px] rounded-full"
@@ -50,12 +58,21 @@
             Sign Up
           </button>
         </section>
+        <span class="text-[40px] hidden lg:block md:block">
+          <i class="bx bx-menu"></i>
+        </span>
       </nav>
     </header>
     <main>
       <section class="flex flex-col items-center justify-center mt-[6rem]">
-        <h1 class="text-[#1E0E62] font-bold text-[72px]">Startup Framework</h1>
-        <p class="text-[22px] text-[#15143966] w-[34%] text-center mt-[2rem]">
+        <h1
+          class="text-[#1E0E62] font-bold text-[72px] md:w-[100%] lg:w-[100%]"
+        >
+          Startup Framework
+        </h1>
+        <p
+          class="text-[22px] text-[#15143966] w-[34%] text-center mt-[2rem] md:w-[100%] lg:w-[100%]"
+        >
           We made it so beautiful and simple. It combines landings, pages, blogs
           and shop screens. It is definitely the tool you need in your
           collection!

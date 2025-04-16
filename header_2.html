@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <!-- google font link -->
+    <!-- boxicons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- boxicons link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -19,43 +25,52 @@
             fontFamily: {
               sans: ["DM Sans", "sans-serif"],
             },
+            screens: {
+              md: { max: "700px" },
+              lg: { min: "701px", max: "1024px" },
+              xl: { min: "1025px", max: "1536px" },
+              xxl: { min: "1537px" },
+            },
           },
         },
       };
     </script>
     <title>Header2</title>
   </head>
-  <body class="bg-[#2f1893] text-white my-16 mx-32">
+  <body
+    class="bg-[#2f1893] text-white my-16 mx-32 md:my-[20px] md:mx-[35px] lg:my-[20px] lg:mx-[35px]"
+  >
     <header>
       <nav class="flex items-center justify-between">
         <section>
           <span class="text-[24px] font-bold"> Startup 3</span>
         </section>
-        <section>
-          <ul class="list-none flex items-center text-[18px]">
-            <li>
-              <a href="#" class="text-white decoration-none">Subscribe</a>
-            </li>
-            <li>
-              <a href="#" class="text-white decoration-none mx-[30px]"
-                >Featurs</a
-              >
-            </li>
-            <button
-              class="text-white bg-[#482be7] rounded-full py-3 px-6 text-[18px]"
-            >
-              Sign Up
-            </button>
-          </ul>
-        </section>
+        <ul class="list-none flex items-center text-[18px] md:hidden lg:hidden">
+          <li>
+            <a href="#" class="text-white decoration-none">Subscribe</a>
+          </li>
+          <li>
+            <a href="#" class="text-white decoration-none mx-[30px]">Featurs</a>
+          </li>
+          <button
+            class="text-white bg-[#482be7] rounded-full py-3 px-6 text-[18px]"
+          >
+            Sign Up
+          </button>
+        </ul>
+        <span class="text-[40px] hidden lg:block md:block">
+          <i class="bx bx-menu"></i>
+        </span>
       </nav>
     </header>
     <main>
       <section class="flex flex-col justify-center items-center mt-[4rem]">
-        <h1 class="text-[72px] w-[40%] font-black text-center">
+        <h1
+          class="text-[72px] w-[40%] font-black text-center md:w-[100%] lg:[100%]"
+        >
           Let’s make design fast and easy
         </h1>
-        <p class="text-[22px] w-[35%] text-center">
+        <p class="text-[22px] w-[35%] text-center md:w-[100%] lg:w-[100%]">
           The most important part of the Startup is the samples. The samples
           form a set of 25 usable pages you can use as is or you can add new
           blocks from UI Kit.
